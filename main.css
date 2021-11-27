@@ -1,0 +1,136 @@
+:root {
+    font-family: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(0,11%,12%);
+}
+
+section {
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+    overflow-x: hidden;
+    text-align: center;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-header {
+    background-image: url('./images/bg-pattern-card.png');
+    background-size: cover;
+    height: 150px;
+}
+
+.card-body {
+    padding: 0 20px 25px;
+}
+
+.img-holder {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: -50px auto 30px auto;
+   
+}
+
+.img-holder img {
+   width: 100%;
+   height: auto;
+   display: block;
+   border-radius: 50%;
+   border: 5px solid white;
+}
+
+.name-age {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.city {
+    font-size: .9rem;
+}
+
+.name-age span, .city, .meta {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.name-age span {
+    margin-left: 6px;
+}
+
+.card-footer {
+    border-top: 1px solid hsl(0,3%,86%);
+    display: flex;
+    padding: 0 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-footer .item {
+    flex: 1;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.card-footer .item .value {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.card-footer .item .meta {
+    font-size: .7rem;
+    letter-spacing: 1px;
+
+}
+
+/* Graphics section */
+.circles .c1, .circles .c2 {
+    position: absolute;
+    width: 800px;
+}
+
+.c1 {
+    top: -190px;
+    left: -240px;
+}
+
+.c2 {
+    bottom: -190px;
+    right: -240px;
+}
+
+@media only screen and (max-width:767px){
+    .circles .c1, .circles .c2 {
+        position: absolute;
+        width: 400px;
+    }
+    .c1 {
+        top: -200px;
+        left: -240px;
+    }
+    
+    .c2 {
+        bottom: -200px;
+        right: -240px;
+    }
+}
